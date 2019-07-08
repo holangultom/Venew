@@ -17,6 +17,10 @@ body {
     line-height: 1.4;
 }
 
+.website-logo {
+    width: 200px;
+}
+
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: var(--text-color);
@@ -39,21 +43,30 @@ a, a:hover, a:focus, a:active {
     justify-content: space-evenly;
 }
 
-.venew-big, .venew-big-2 {
+.venew-big-2 {
     font-size: 80px;
 }
 
-.venew-big {
-    position: fixed;
-    top: 40px;
+.by-christo {
+    font-size: 25px;
+    position: relative;
+    bottom: 25px;
 }
 
 .venew-big-2 {
     position: fixed;
     bottom: 200px;
-    right: 0;
+    right: -20px;
     text-align: center;
     transform: rotate(90deg);
+}
+
+.page-header {
+    display: inline;
+    position: fixed;
+    top: 0;
+    padding-right: var(--big-padding);
+    padding-left: var(--big-padding);
 }
 
 .page-footer {
@@ -130,6 +143,23 @@ a, a:hover, a:focus, a:active {
 
     .credits {
         font-size: 8px;
+    }
+
+    .by-christo {
+        font-size: 15px;
+        position: relative;
+        bottom: 20px;
+    }
+    
+
+    .page-header {
+        padding-top: 20px;
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: center;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .page-footer {
