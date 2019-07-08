@@ -161,13 +161,7 @@ a, a:hover, a:focus, a:active {
     }
     
     .venew-big-2 {
-        position: fixed;
-        bottom: 140px;
-        right: -50px;
-        text-align: center;
-        -webkit-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-                transform: rotate(90deg);
+        display: none;
     }
 
     .building-icon {
