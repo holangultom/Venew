@@ -1,0 +1,140 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --big-padding: 100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: var(--default-font-weight);
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.main-content {
+    display: block;
+    padding-right: var(--big-padding);
+    padding-left: var(--big-padding);
+}
+
+.main-content__contact {
+    position: relative;
+    top: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.venew-big, .venew-big-2 {
+    font-size: 80px;
+}
+
+.venew-big {
+    position: fixed;
+    top: 0;
+}
+
+.venew-big-2 {
+    position: fixed;
+    bottom: 200px;
+    right: 0;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-right: var(--big-padding);
+    padding-left: var(--big-padding);
+}
+
+.credits {
+    font-size: 10px;
+}
+
+.building-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.building-icon {
+    height: 100%;
+    width: 100%;
+}
+
+.call-to-action__button {
+    padding: 2px 10px;
+    background-color: black;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: white;
+}
+
+.call-to-action__button:hover {
+    color: white;
+}
+
+.call-to-action__button:focus {
+    color: white;
+}
+
+.call-to-action__button:active {
+    color: white;
+}
+
+@media all and (max-width: 500px) {
+    .main-content {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .venew-big, .venew-big-2 {
+        font-size: 50px;
+    }
+    
+    .venew-big {
+        position: fixed;
+        top: 0;
+    }
+    
+    .venew-big-2 {
+        position: fixed;
+        bottom: 140px;
+        right: -50px;
+        text-align: center;
+        transform: rotate(90deg);
+    }
+
+    .building-icon {
+        height: 45px;
+    }
+
+    .credits {
+        font-size: 8px;
+    }
+
+    .page-footer {
+        padding-right: 0px;
+        padding-left: 0px;
+        height: 70px;
+    }
+}
