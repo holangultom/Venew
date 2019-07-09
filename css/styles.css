@@ -17,8 +17,9 @@ body {
     line-height: 1.4;
 }
 
-.website-logo {
+#website-logo {
     width: 200px;
+    transition: 0.3s;
 }
 
 a, a:hover, a:focus, a:active {
@@ -30,6 +31,7 @@ a, a:hover, a:focus, a:active {
     display: block;
     padding-right: var(--big-padding);
     padding-left: var(--big-padding);
+    height: 1000px;
 }
 
 .main-content__contact {
@@ -65,8 +67,11 @@ a, a:hover, a:focus, a:active {
     display: inline;
     position: fixed;
     top: 0;
+    width: 100%;
     padding-right: var(--big-padding);
     padding-left: var(--big-padding);
+    background-color: white;
+    z-index: 1;
 }
 
 .page-footer {
@@ -76,6 +81,7 @@ a, a:hover, a:focus, a:active {
     position: fixed;
     bottom: 0;
     width: 100%;
+    background-color: white;
     padding-right: var(--big-padding);
     padding-left: var(--big-padding);
 }
@@ -146,7 +152,11 @@ a, a:hover, a:focus, a:active {
         position: relative;
         bottom: 20px;
     }
-    
+
+    #by-christo {
+        font-size: 15px;
+        transition: 0.3s;
+    }
 
     .page-header {
         padding-top: 20px;
