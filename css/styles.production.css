@@ -55,10 +55,11 @@ a, a:hover, a:focus, a:active {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 8%;
 }
 
 .venew-big-2 {
@@ -68,12 +69,15 @@ a, a:hover, a:focus, a:active {
 .by-christo {
     font-size: 25px;
     position: relative;
-    bottom: 25px;
+    bottom: 23px;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
 }
 
 .venew-big-2 {
     position: fixed;
-    bottom: 200px;
+    bottom: 25%;
     right: -20px;
     text-align: center;
     -webkit-transform: rotate(90deg);
@@ -82,10 +86,14 @@ a, a:hover, a:focus, a:active {
 }
 
 .page-header {
-    display: inline;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     position: fixed;
     top: 0;
     width: 100%;
+    padding-top: 1%;
     padding-right: var(--big-padding);
     padding-left: var(--big-padding);
     background-color: white;
@@ -184,7 +192,7 @@ a, a:hover, a:focus, a:active {
     .by-christo {
         font-size: 15px;
         position: relative;
-        bottom: 20px;
+        bottom: 28px;
     }
 
     #by-christo {

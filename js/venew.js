@@ -15,6 +15,12 @@ if (x.matches) {
     } else {
       document.getElementById("by-christo").style.fontSize = "15px";
     }
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("by-christo").style.bottom = "8px";
+    } else {
+      document.getElementById("by-christo").style.border = "28px";
+    }
   }}
   else
   {
